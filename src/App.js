@@ -23,7 +23,12 @@ function App() {
     <div className="App">
       Arnold's World
       {imagesMetaData.map((imageMetaData) => (
-        <img src={imageMetaData.download_url} width={300} height={300} />
+        <img
+          src={imageMetaData.download_url}
+          width={300}
+          height={300}
+          alt={imageMetaData.author}
+        />
       ))}
       {imagesMetaData.map((imageMetaData) => (
         <div>{imageMetaData.author}</div>
